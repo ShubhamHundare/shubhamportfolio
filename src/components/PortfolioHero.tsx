@@ -22,7 +22,7 @@ const PortfolioHero = () => {
       <div className="absolute bottom-40 left-20 w-12 h-12 rounded-full bg-secondary/20 floating animate-delay-500" />
 
       {/* Hero Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      <div className="relative z-10 container mx-auto px-1 sm:px-6 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Name and Title */}
           <div className="hero-glow mb-8">

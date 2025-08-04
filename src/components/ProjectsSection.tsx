@@ -56,7 +56,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-gradient-to-br from-muted/20 to-background">
+    <section id="projects" className="py-20 px-1 sm:px-6 bg-gradient-to-br from-muted/20 to-background">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
