@@ -124,7 +124,7 @@ const PortfolioHero = () => {
               <Mail className="w-6 h-6" />
             </a>
             <a 
-              href="#" 
+              href="https://github.com/ShubhamHundare" 
               className="p-3 rounded-full border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
             >
               <Github className="w-6 h-6" />
