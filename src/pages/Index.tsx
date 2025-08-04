@@ -6,6 +6,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
           </p>
         </div>
       </footer>
+      <WhatsAppFloat />
     </div>
   );
 };
