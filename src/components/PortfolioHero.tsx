@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone, Download } from "lucide-react";
+import heroImage from "@/assets/hero-bg-demo.jpg";
+import profileImage from "@/assets/profile-image.jpg";
 
 const PortfolioHero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -24,6 +25,18 @@ const PortfolioHero = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-1 sm:px-6 text-center">
         <div className="max-w-4xl mx-auto">
+          {/* Profile Image */}
+          <div className="mb-8 animate-fade-in-up">
+            <div className="relative w-32 h-32 mx-auto mb-6">
+              <img 
+                src={profileImage} 
+                alt="Shubham Hundare" 
+                className="w-full h-full rounded-full object-cover border-4 border-primary/20 shadow-lg"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-transparent"></div>
+            </div>
+          </div>
+
           {/* Name and Title */}
           <div className="hero-glow mb-8">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up">
@@ -77,6 +90,20 @@ const PortfolioHero = () => {
               onClick={() => scrollToSection('experience')}
             >
               View My Work
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-accent/50 text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf'; // You can upload your resume as resume.pdf
+                link.download = 'Shubham_Hundare_Resume.pdf';
+                link.click();
+              }}
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download Resume
             </Button>
           </div>
 
